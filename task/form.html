@@ -10,53 +10,45 @@
 
 <body>
     <section class="registration">
-
         <div class="registrationForm">
             <h1>Registration Form</h1>
-            <form>
+            <form id="registrationForm">
                 <div class="shRow">
                     <div class="shBox">
                         <label for="fullname">Full Name :</label>
-                        <input class="formControl" type="text" id="fullname" name="fullname" required >
+                        <input class="formControl" type="text" id="fullname" name="fullname" required>
                     </div>
-
                     <div class="shBox">
                         <label for="username">Username :</label>
-                        <input class="formControl" type="text" id="username" name="username" required >
+                        <input class="formControl" type="text" id="username" name="username" required>
                     </div>
                 </div>
-
                 <div class="shRow">
                     <div class="shBox">
                         <label for="password">Password :</label>
-                        <input class="formControl" type="password" id="password" name="password" required >
+                        <input class="formControl" type="password" id="password" name="password" required>
                     </div>
-
                     <div class="shBox">
                         <label for="confirm_password">Confirm Password :</label>
-                        <input class="formControl" type="password" id="confirm_password" name="confirm_password" required >
+                        <input class="formControl" type="password" id="confirm_password" name="confirm_password" required>
                     </div>
                 </div>
-
                 <div class="shBox">
                     <div class="shBox">
                         <label for="email">Email Address :</label>
-                        <input class="formControl" type="email" id="email" name="email" required >
+                        <input class="formControl" type="email" id="email" name="email" required>
                     </div>
                 </div>
-
                 <div class="shBox">
                     <div class="shBox">
                         <label for="phone">Phone Number :</label>
-                        <input class="formControl" type="tel" id="phone" name="phone" required >
+                        <input class="formControl" type="tel" id="phone" name="phone" required>
                     </div>
-
                     <div class="shBox">
                         <label for="dob">Date of Birth :</label>
                         <input class="formControl" type="date" id="dob" name="dob" required>
                     </div>
                 </div>
-
                 <div class="shBox">
                     <div class="shBox gender">
                         <label>Gender :</label>
@@ -65,7 +57,6 @@
                         <label><input type="radio" name="gender" value="other" required> Other</label>
                     </div>
                 </div>
-
                 <div class="shBox">
                     <div class="shBox hobbies">
                         <label>Hobbies :</label>
@@ -75,13 +66,11 @@
                         <label><input type="checkbox" name="hobbies" value="talking"> Talking</label>
                     </div>
                 </div>
-
                 <div class="shBox">
                     <div class="shBox">
                         <label for="profile-pic">Profile picture :</label>
-                        <input type="file" id="profile-pic" name="profile-picture" required>
+                        <input type="file" id="profile-pic" name="profile-picture">
                     </div>
-
                     <div class="shBox">
                         <label for="country">Country :</label>
                         <select class="formControl" id="country" name="country" required>
@@ -95,28 +84,23 @@
                         </select>
                     </div>
                 </div>
-
                 <div class="biogrp">
-                        <label for="bio">Bio :</label>
-                        <textarea class="formControl" id="bio" name="bio" rows="7" required ></textarea>
-                    
+                    <label for="bio">Bio :</label>
+                    <textarea class="formControl" id="bio" name="bio" rows="7" required></textarea>
                 </div>
-
                 <div class="shBox agree">
                     <div class="shBox">
                         <label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>
                     </div>
                 </div>
-
-                <div class="butgrp">
+                <div class="butgrp" onclick="handleclick()">
                     <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                    </div>
-                </div>
+                    <input type="reset" value="Reset" id="resetButton">
                 </div>
             </form>
         </div>
     </section>
+    <script src="form.js"></script>
 </body>
 
 </html>
